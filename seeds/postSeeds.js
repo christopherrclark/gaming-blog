@@ -8,7 +8,7 @@ const postsSeeds = [
         post_title: "Bob's post title!",
         post_content: "This is the body of Bob's post!!"
     },
-    //Mike's post
+    //Jason's post
     {
         user_id: 2, 
         post_date: "01/01/2022",
