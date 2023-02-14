@@ -40,14 +40,13 @@ router.get('/:id' , async (req, res) => {
 //Create a post
 router.post('/', async (req, res) => {
     try {
-        let createPost = await Post.Create({
-            postDate: req.body.post_date,
-            postText: req.body.post_content,
-            postTitle: req.body.post_title,
+        let createPost = await Post.create({
+            post_date: req.body.post_date,
+            post_text: req.body.post_content,
+            post_title: req.body.post_title,
             user_id: req.session.user.user_id
         })
         res.status(201).send(createPost)
-        console.log("Post created!")
         console.log(createPost);
     } catch (err) {
         console.log(err);
@@ -61,8 +60,8 @@ router.put('/:id', async (req, res) => {
 
     try {
         let postToUpdate = await Post.Update({
-            postTitle: req.body.post_title,
-            postContent: req.body.post_content
+            post_title: req.body.post_title,
+            post_content: req.body.post_content
         }, 
         { where: { id: postId }})
 

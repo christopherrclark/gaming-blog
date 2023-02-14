@@ -4,7 +4,7 @@ const commentSeeds = [
     //Bob's comment
     {
         user_id: 1,
-        post_id: 1,
+        post_id: 2,
         comment_date: "01/01/2022",
         comment_content: "This website makes trees happy!"
     },

@@ -2,7 +2,9 @@
     <div class="post-handler">
         {{!-- Later on we will only display certain qualities of the post to those who are logged in --}}
         <h1>{{ post_title }}</h1>
+
         <p>{{ user.username }} posted this on {{ format_date post_date}}</p>
         <p>{{ post_content }}</p>
+        
     </div>
 </div>
