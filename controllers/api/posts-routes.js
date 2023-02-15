@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post } = require('../../models');
+const { Post, Comment } = require('../../models');
 
 //Get all posts
 router.get('/', async (req, res) => {
@@ -79,9 +79,11 @@ router.put('/:id', async (req, res) => {
 
 //Delete a post
 router.delete('/:id', async (req, res) => {
-    let postId = req.params.id;
+    let postId = parseInt(req.params.id)
 
     try {
+        await Comment.destroy({ where: { post_id: postId } });
+
         let postToDelete = await Post.destroy({ where: { id: postId }});
 
         if (!postToDelete) {

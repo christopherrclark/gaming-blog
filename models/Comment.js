@@ -18,6 +18,7 @@ Comment.init(
         post_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
+            onDelete: 'cascade',
             references: {
                 model: 'post',
                 key: 'id'
@@ -25,7 +26,6 @@ Comment.init(
         },
         comment_date: {
             type: DataTypes.STRING,
-            allowNull: false,
         },
         comment_content: {
             type: DataTypes.STRING,

@@ -21,7 +21,6 @@ Post.init(
         },
         post_date: {
             type: DataTypes.STRING,
-            allowNull: false,
         },
         post_title: {
             type: DataTypes.STRING,
