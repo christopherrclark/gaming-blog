@@ -1,10 +1,14 @@
-async function newPostHandler(event) {
+
+
+
+
+const addPostHandler = async (event) => {
   event.preventDefault();
 
   const postTitle = document.querySelector('input[name="post-title"]').value;
-  const postContent = document.querySelector('input[name="post_content"]').value;
-
-  const response = await fetch(`/api/posts`, {
+  const postContent = document.querySelector('textarea[name="post-content"]').value;
+     console.log(postContent);
+  const response = await fetch('/api/posts', {
     method: 'POST',
     body: JSON.stringify({
       post_title: postTitle,
@@ -15,11 +19,13 @@ async function newPostHandler(event) {
       'Content-Type': 'application/json',
     },
   });
+
   if (response.ok) {
     document.location.replace('/dashboard');
   } else {
     alert('Failed to add Post');
   }
-}
+};
 
-document.querySelector('.add-post-form').addEventListener('submit', newPostHandler);
+document.querySelector('#add-post-form').addEventListener('submit', addPostHandler);
+

@@ -42,9 +42,9 @@ router.post('/', async (req, res) => {
     try {
         let createPost = await Post.create({
             post_date: req.body.post_date,
-            post_text: req.body.post_content,
+            post_content: req.body.post_content,
             post_title: req.body.post_title,
-            user_id: req.session.user.user_id
+            user_id: req.session.user_id
         })
         res.status(201).send(createPost)
         console.log(createPost);
