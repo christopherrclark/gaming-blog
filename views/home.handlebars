@@ -1,5 +1,6 @@
-<h1>Home page</h1>
+{{!-- <h1>Home page</h1> --}}
 
+<h1 class="home-page-title">Home page</h1>
 
 {{!-- carousel --}}
 
@@ -46,7 +47,7 @@
         </a>
       </div>
     </div>
-  {{#each posts as |post|}}
+  {{#each posts as |post| }}
     {{> individualPosts post}}
   {{/each}}
   <script src="/js/api.js"></script>

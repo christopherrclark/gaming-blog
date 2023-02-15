@@ -84,4 +84,3 @@ router.get('/createComment', (req, res) => {
 
 module.exports = router;
 
-//So the issue I discovered was not that I wasn't logged in after refresh, but the 'logout' option in the nav bar was not disappearing after I logged out. I have the logic in my navigation links (main.handlebars) that will only show 'logout' if the user is logged in. If I am logged in with a user, and I click 'logout' in the navigation, the logout button still remains, thus me thinking that I was still logged in. But the main overlying issue is still there: why does the 'logout' option still remain, event if I have logged out with the user? Keep in mind that if I click 'log out' again, then the button disappears and I can log back in again. Let me know if this doesn't make sense!

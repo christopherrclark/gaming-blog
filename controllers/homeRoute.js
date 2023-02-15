@@ -7,8 +7,10 @@ const sequelize = require('../config/connection.js');
 
 //The home page will have all of the users posts
 router.get('/', async (req, res) => {
+
   
   console.log(req.session.logged_in)
+
   try {
     const postData = await Post.findAll({
       attributes: [
@@ -32,14 +34,14 @@ router.get('/', async (req, res) => {
         },
         {
             model: User,
-            attributes: [['username', 'user']]
+            attributes: ['username']
         }]
     })
       
       
 
     let posts = postData.map((post) => post.get({ plain: true }));
-    
+
     res.render('home', {
       posts,
       logged_in: req.session.logged_in

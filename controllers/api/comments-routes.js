@@ -18,8 +18,8 @@ router.post('/', async (req, res) => {
         try {
             //I think that this is the data that I need, will add more if necessary
             let createdComment = await Comment.create({
-                commentDate: req.body.comment_date,
-                commentText: req.body.comment_content,
+                comment_date: req.body.comment_date,
+                comment_content: req.body.comment_content,
                 //Session are required to make sure the user is still logged in to make this comment??
                 user_id: req.session.user_id,
             });
@@ -38,7 +38,7 @@ router.put('/:id', async (req, res) => {
     try {
         let commentToUpdate = await Comment.Update({ 
             where: { id: commentId }},
-            { commentContent: req.body.comment_text});
+            { comment_content: req.body.comment_text});
 
         if (!commentToUpdate) {
                 res.status(404).json({message: "Post not found!"})
