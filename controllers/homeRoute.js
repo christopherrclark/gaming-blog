@@ -7,6 +7,10 @@ const sequelize = require('../config/connection.js');
 
 //The home page will have all of the users posts
 router.get('/', async (req, res) => {
+
+  
+  console.log(req.session.logged_in)
+
   try {
     const postData = await Post.findAll({
       attributes: [
@@ -114,32 +118,5 @@ router.get('/login', async (req, res) => {
   }
 });
 
-
-// API call
-// GET https://api.rawg.io/api/platforms?key=YOUR_API_KEY
-// GET https://api.rawg.io/api/games?key=YOUR_API_KEY&dates=2019-09-01,2019-09-30&platforms=18,1,7
-
-
-const apiKey = "8327d8664a0940748be97c19d4af0504"
-
-async function getResponse() {
-  var url = "https://api.rawg.io/api/games?key=" + apiKey + "&dates=2019-09-01,2019-09-30&platforms=18,1,7";
-  const response = await fetch(url, { method: 'GET' });
-  if (!response.ok) {
-    alert("Search not found. Try again");
-  }
-  else {
-    const data = await response.json(); 
-    
-    // Extracting data as a JSON Object from the response
-    if (!data) {
-      alert("No results found");
-    }
-    else {
-      console.log(data);
-      return;        
-    }
-  }
-}
 
 module.exports = router;

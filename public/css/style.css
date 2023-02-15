@@ -35,11 +35,15 @@ body {
 }
 
 #logout {
-  color: #0d6efd;
+  color: white;
   text-decoration: underline;
   cursor: pointer;
   display: inline-block;
   margin-right: 3rem;
+}
+
+#logout:hover {
+  color: hotpink;
 }
 
 nav {
@@ -58,7 +62,27 @@ li {
   margin: 0.5em;
 }
 
-li::before {
+/* unvisited link */
+/* a:link {
+  color: red;
+} */
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+/* li::before {
   content: "•"; color: #0d6efd;
 }
 
@@ -66,7 +90,7 @@ li::before {
   content: "•"; color: #0d6efd;
   display: inline-block; width: 1em;
   margin-left: -1em
-}
+} */
 
 .login-form {
   background-color: var(--lightblue);
@@ -118,8 +142,8 @@ li::before {
 }
 
 .delete-something-button {
-  background-color: var(--offwhite);
-  color: #0d6efd;
+  background-color: var(--darkblue);
+  color: white;
   text-decoration: underline;
   border: 2px solid var(--lightpurp);
   padding: 4px;
@@ -129,8 +153,12 @@ li::before {
   margin-right: 10px;
 }
 
+.delete-something-button:hover {
+  color:hotpink;
+}
+
 .create-something-button {
-  background-color: var(--offwhite);
+  background-color: var(--darkblue);
   color: black;
   border: 2px solid var(--lightpurp);
   padding: 4px;
