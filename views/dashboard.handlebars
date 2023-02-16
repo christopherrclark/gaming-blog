@@ -2,11 +2,7 @@
     <h1 class="dashboard-title">Your Current Posts</h1>
     {{#each posts as |post|}}
         {{> individualPosts post}}
-        {{#each comments as |comment|}}
-            {{!-- {{> individualComments post}} --}}
-        {{!-- Add a button to delete the post --}}
-        {{!-- Add a button to edit the post --}}
-            
+        {{#each comments as |comment|}}            
         {{/each}}
         <button class="delete-something-button" data-id="{{post.id}}">Delete me</button>
     {{/each}}
