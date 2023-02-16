@@ -50,7 +50,7 @@ $(document).ready(function () {
     }
     else {
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       // Extracting data as a JSON Object from the response
       if (!data) {
         alert("No results found");

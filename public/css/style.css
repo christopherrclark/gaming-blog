@@ -61,7 +61,7 @@ ul {
   list-style: none;
   display: block;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 li {
@@ -179,8 +179,9 @@ li::before {
   padding: 4px;
   border-radius: 7px;
   box-shadow: 4px 4px var(--darkpurp);
-  margin: 1px auto;
-  margin-right: 10px;
+  margin: 0 auto;
+  display: flex;
+
 }
 
 .delete-something-button:hover {
@@ -204,9 +205,14 @@ li::before {
 
 
 .like-post-button {
-  color: #c3c8ff;
-  background: none;
-  border: none;
+  color: var(--offwhite);
+  background-color: var(--darkpurp);
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.like-post-button:hover {
+  color: hotpink;
 }
 
 
@@ -279,6 +285,16 @@ padding: 20px;
 
 .btn {
   background-color: var(--darkpurp);
+}
+
+#logout {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#logout:hover {
+  color: hotpink;
 }
 
 

@@ -1,20 +1,21 @@
 <nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/dashboard">Dashboard</a></li>
-    <li><a href="/games">Game Info</a></li>
-    <li><a href="/login">login</a></li>
-
-    <li>Log out</li>
-    <li>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </li>
-
-  </ul>
-</nav>
+    <ul>
+        <li><a href='/'>Home</a></li>
+        {{!-- Only if the user is logged in will this link appear --}}
+        {{!-- Notice how we can use the 'logged_in' here. We can do this by adding it to the 'res.render' in the routes. See line '87' --}}
+        {{#if logged_in}}
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/games">Game Info</a></li>
+            {{!-- Had to change this to an id and not an href, since the href was taking longer than the js logic to log me out!! --}}
+            <li id="logout">Logout</li>
+        {{else}}
+            <li><a href="/login">Dashboard</a></li>
+            <li><a href='/login'>Login</a></li>
+        {{/if}}
+    </ul>
+  </nav>
 
 
 <script src="/js/logout.js"></script>
+
+
