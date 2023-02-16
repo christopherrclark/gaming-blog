@@ -5,15 +5,15 @@ const postsSeeds = [
     {
         user_id: 2, 
         post_date: "01/01/2022",
-        post_title: "Bob's post title!",
-        post_content: "This is the body of Bob's post!!"
+        post_title: "GTA is the best game ever!",
+        post_content: "The driving is much easier than GTA 4."
     },
     //Jason's post
     {
         user_id: 1, 
         post_date: "01/01/2022",
-        post_title: "Jason's post title!",
-        post_content: "This is the body of Jason's post!!"
+        post_title: "Doom still reigns Supreme!",
+        post_content: "What more can I say about this game in all honesty?!"
     },
 ];
 

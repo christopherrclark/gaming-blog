@@ -16,6 +16,9 @@ router.get('/', withAuth, async (req, res) => {
         });
 
         const posts = findAllPosts.map((post) => post.get({ plain: true }))
+
+        //console.log(posts)
+
         res.render('dashboard', { 
             posts, 
             logged_in: true 
