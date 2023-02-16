@@ -1,4 +1,4 @@
-<nav>
+{{!-- <nav>
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/dashboard">Dashboard</a></li>
@@ -16,6 +16,32 @@
 
 
 
+  <script src="/js/logout.js"></script> --}}
+
+  <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="#" id="logout-btn">Log out</a></li>
+  </ul>
+</nav>
+
+<script src="/js/logout.js"></script>  <!-- Importing the logout.js script -->
+<script>
+  const logoutButton = document.getElementById('logout-btn'); // Get the logout button element by its ID
+
+  logoutButton.addEventListener('click', function(event) { // Added event listener
+    event.preventDefault();   // Prevent the default behavior of the button (e.g. submitting a form)
+    // Calling the logout function.
+    logout();  // Calling the logout function, which should handle logging the user out and redirecting to the login page.  
+  });
+</script>
+
+
+
   <script src="/js/logout.js"></script>
 
-   
+
+
+
