@@ -42,10 +42,6 @@ app.use(session(sess));
 //Make sure your routes are declared AFTER your sessions
 app.use(routes);
 
-// Just for testing purposes until I can get the route to show up, then I will use the sequelize version of this. 
-// app.listen(PORT, () => {
-//     console.log(`Listening on route ${PORT}...`)
-// })
 
 //! For when I get Sequelize stuff running
 sequelize.sync({ force: false }).then(() => {

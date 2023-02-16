@@ -15,6 +15,18 @@ body {
   color: var(--darkpurp);
 }
 
+/* h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .dashboard-title {
   display: flex;
   justify-content: center;
@@ -42,13 +54,14 @@ body {
 
 nav {
   background-color: var(--darkpurp);
+  /* color: var(--lightblue); */
+  /* color: var(--lightblue); */
 }
-
 ul {
   list-style: none;
   display: block;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 li {
@@ -56,10 +69,24 @@ li {
   margin: 0.5em;
 }
 
+/* unvisited link */
+/* a:link {
+  color: red;
+} */
+
+/* visited link */
+/* unvisited link */
+/* a:link {
+  color: red;
+} */
+
+/* visited link */
 a:visited {
   color: white;
 }
 
+/* mouse over link */
+/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -69,12 +96,36 @@ a:active {
   color: white;
 }
 
+/* li::before {
+  content: "•"; color: #0d6efd;
+}
+
+li::before {
+  content: "•"; color: #0d6efd;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+} */
+
+/* li::before {
+  content: "•"; color: #0d6efd;
+}
+
+li::before {
+  content: "•"; color: #0d6efd;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+} */
+
 .login-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .signup-form {
@@ -83,6 +134,10 @@ a:active {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .post-item {
@@ -124,8 +179,9 @@ a:active {
   padding: 4px;
   border-radius: 7px;
   box-shadow: 4px 4px var(--darkpurp);
-  margin: 1px auto;
-  margin-right: 10px;
+  margin: 0 auto;
+  display: flex;
+
 }
 
 .delete-something-button:hover {
@@ -149,9 +205,14 @@ a:active {
 
 
 .like-post-button {
-  color: #c3c8ff;
-  background: none;
-  border: none;
+  color: var(--offwhite);
+  background-color: var(--darkpurp);
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.like-post-button:hover {
+  color: hotpink;
 }
 
 
@@ -226,4 +287,17 @@ padding: 20px;
   background-color: var(--darkpurp);
 }
 
+#logout {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
+#logout:hover {
+  color: hotpink;
+}
+
+
+/* #emailhelp {
+  color: black;
+} */
