@@ -30,6 +30,10 @@ Post.init(
         post_content: {
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        likes: {
+            type:DataTypes.INTEGER,
+            defaultValue: 0
         }
     },
     {

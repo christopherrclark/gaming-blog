@@ -8,7 +8,6 @@ router.get('/', async (req, res) => {
             include: [
                 {
                     model: Comment,
-                    //I want to view these specific details
                     attributes: ['id', 'user_id', 'post_id', 'post_date', 'post_content']
                 }
             ]
@@ -59,7 +58,7 @@ router.put('/:id', async (req, res) => {
     let postId = req.params.id;
 
     try {
-        let postToUpdate = await Post.Update({
+        let postToUpdate = await Post.update({
             post_title: req.body.post_title,
             post_content: req.body.post_content
         }, 
@@ -95,6 +94,28 @@ router.delete('/:id', async (req, res) => {
         console.log(err);
         res.status(500).json(err);
     }
-})
+});
+
+router.put('/:id/like', async (req, res) => {
+    try {
+      const post = await Post.findByPk(req.params.id);
+  
+      if (!post) {
+        res.status(404).json({ error: 'Post not found' });
+        return;
+      }
+  
+      // increment the post's like count
+      post.likes++;
+  
+      // save the updated post
+      await post.save();
+  
+      res.json({ likes: post.likes });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Server error' });
+    }
+  });
 
 module.exports = router;
