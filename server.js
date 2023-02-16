@@ -6,7 +6,7 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
 const session = require('express-session');
-// const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // Creating a session
 const sess = {
@@ -16,9 +16,9 @@ const sess = {
   },
   resave: false,
   saveUninitialized: true,
-  // store: new SequelizeStore({
-  //     db: sequelize
-  // })
+  store: new SequelizeStore({
+      db: sequelize
+  })
 };
 
 //Initializing express
@@ -43,14 +43,14 @@ app.use(session(sess));
 app.use(routes);
 
 // Just for testing purposes until I can get the route to show up, then I will use the sequelize version of this. 
-app.listen(PORT, () => {
-    console.log(`Listening on route ${PORT}...`)
-})
+// app.listen(PORT, () => {
+//     console.log(`Listening on route ${PORT}...`)
+// })
 
 //! For when I get Sequelize stuff running
-// sequelize.sync({ force: false }).then(() => {
-//     //Also can import the Seeds file then change the above to "true"
-//     app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
-//   });
+sequelize.sync({ force: false }).then(() => {
+    //Also can import the Seeds file then change the above to "true"
+    app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
+  });
   
 
