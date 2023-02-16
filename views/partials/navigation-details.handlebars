@@ -7,13 +7,14 @@
   </ul>
 </nav>
 
-<script src="/js/logout.js"></script>
+<script src="/js/logout.js"></script>  <!-- Importing the logout.js script -->
 <script>
-  const logoutButton = document.getElementById('logout-btn');
-  logoutButton.addEventListener('click', function(event) {
-    event.preventDefault();
+  const logoutButton = document.getElementById('logout-btn'); // Get the logout button element by its ID
+
+  logoutButton.addEventListener('click', function(event) { // Added event listener
+    event.preventDefault();   // Prevent the default behavior of the button (e.g. submitting a form)
     // Calling the logout function.
-    logout();
+    logout();  // Calling the logout function, which should handle logging the user out and redirecting to the login page.  
   });
 </script>
 
