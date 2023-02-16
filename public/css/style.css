@@ -34,7 +34,7 @@ body {
   margin-bottom: 3rem;
 }
 
-#logout {
+#logout-btn {
   color: white;
   text-decoration: underline;
   cursor: pointer;
@@ -42,7 +42,7 @@ body {
   margin-right: 3rem;
 }
 
-#logout:hover {
+#logout-btn:hover {
   color: hotpink;
 }
 
@@ -119,7 +119,9 @@ li::before {
   border-radius: 20px;
   box-shadow: 10px 10px var(--darkpurp);
   margin: 2rem auto;
+  max-width: 500px;
 }
+
 
 .carousel-control-prev {
   background-color: var(--grey);
