@@ -178,5 +178,77 @@ li::before {
   color: #c3c8ff;
   background: none;
   border: none;
-  
 }
+
+
+
+/* Game Info Page */
+
+#game-dropdown {
+  background-color: var(--darkpurp);
+  color: aliceblue;
+}
+
+#game-info {
+  background-color: var(--lightblue);
+  border: 5px solid var(--lightpurp);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.name {
+padding: 20px;
+}
+
+#image {
+  background-color: azure;
+  filter: drop-shadow(10px 10px 10px #A4BBFF);
+
+
+}
+
+#playtime {
+  background-color: var(--lightblue);
+  border: 5px solid var(--lightpurp);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 4px var(--darkpurp);
+}
+
+#rating {
+  background-color: var(--lightblue);
+  border: 5px solid var(--lightpurp);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 4px var(--darkpurp);
+}
+
+#platforms {
+  padding: 20px;
+}
+
+#released {
+  background-color: var(--lightblue);
+  border: 5px solid var(--lightpurp);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 4px var(--darkpurp);
+}
+
+#add-post-form {
+  background-color: var(--lightblue);
+  border: 5px solid var(--lightpurp);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.btn {
+  background-color: var(--darkpurp);
+}
+
