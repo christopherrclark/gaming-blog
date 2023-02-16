@@ -6,7 +6,7 @@ const logout = async () => {
 
   if (response.ok) {
     alert("You have logged out!")
-    window.location.href = "/login";
+
   } else {
     alert('Please Login First');
   }
