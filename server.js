@@ -11,7 +11,9 @@ const session = require('express-session');
 // Creating a session
 const sess = {
   secret: 'Super secret secret',
-  cookie: {},
+  cookie: { 
+    maxAge: 10 * 60 * 1000, // expires after 10 minutes},
+  },
   resave: false,
   saveUninitialized: true,
   // store: new SequelizeStore({
