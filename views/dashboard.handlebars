@@ -1,17 +1,18 @@
+
 <div>
     <h1 class="dashboard-title">Your Current Posts</h1>
     {{#each posts as |post|}}
-        {{> individualPosts post}}
-        {{#each comments as |comment|}}
-            {{!-- {{> individualComments post}} --}}
-        {{!-- Add a button to delete the post --}}
-        {{!-- Add a button to edit the post --}}
-            
-        {{/each}}
-        <button class="delete-something-button" data-id="{{post.id}}">Delete me</button>
+    {{> individualPosts post}}
+    {{#each comments as |comment|}}
+    {{!-- {{> individualComments post}} --}}
+    {{!-- Add a button to delete the post --}}
+    {{!-- Add a button to edit the post --}}
+
+    {{/each}}
+    <button class="delete-something-button" data-id="{{post.id}}">Delete me</button>
     {{/each}}
 </div>
 
-<button class="create-something-button" type="submit"><a href="/dashboard/createPost">Create New Post</a></button>
-
+{{!-- <button class="create-something-button" type="submit"><a href="/dashboard/createPost">Create New Post</a></button>
+ --}}
 <script src="/js/deletePost.js"></script>
