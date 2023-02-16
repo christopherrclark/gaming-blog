@@ -15,10 +15,11 @@ $(document).ready(function () {
     for (var i = 0; i < globalData.results.length; i++) {
       var slug = globalData.results[i].slug;
       if (slug === selectedGameSlug) {
-        $("#name").text(globalData.results[i].name);
+        $(".name").text(globalData.results[i].name);
         $("#image").attr("src", globalData.results[i].background_image);
         $("#playtime").text("Playtime: " + globalData.results[i].playtime + " hours");
         $("#rating").text("Metacritics Rating: " + globalData.results[i].metacritic + "/100");
+        $("#platforms").text("")
         for (var j = 0; j < globalData.results[i].platforms.length; j++){
         $("#platforms").append("<li>" + globalData.results[i].platforms[j].platform.name + "</li>");
         }
