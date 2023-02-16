@@ -21,6 +21,12 @@ body {
   align-items: center;
 } */
 
+/* h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .dashboard-title {
   display: flex;
   justify-content: center;
@@ -49,6 +55,7 @@ body {
 nav {
   background-color: var(--darkpurp);
   /* color: var(--lightblue); */
+  /* color: var(--lightblue); */
 }
 ul {
   list-style: none;
@@ -68,10 +75,17 @@ li {
 } */
 
 /* visited link */
+/* unvisited link */
+/* a:link {
+  color: red;
+} */
+
+/* visited link */
 a:visited {
   color: white;
 }
 
+/* mouse over link */
 /* mouse over link */
 a:hover {
   color: hotpink;
@@ -92,12 +106,24 @@ li::before {
   margin-left: -1em
 } */
 
+/* li::before {
+  content: "•"; color: #0d6efd;
+}
+
+li::before {
+  content: "•"; color: #0d6efd;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+} */
+
 .login-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
   /* display: flex; */
   /* justify-content: center; */
 }
@@ -108,6 +134,8 @@ li::before {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
   /* display: flex; */
   /* justify-content: center; */
 }
