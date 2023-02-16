@@ -1,18 +1,17 @@
 const logout = async () => {
-  console.log("logout function firing")
-    const response = await fetch('/api/users/logout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    });
-  
-    if (response.ok) {
-      alert("You have logged out!")
-      window.location.reload();
+  const response = await fetch('/api/users/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
 
-    } else {
-      alert('Please sign in again');
-    }
-  };
-  
-  document.querySelector('#logout').addEventListener('click', logout);
+  if (response.ok) {
+    alert("You have logged out!")
+
+  } else {
+    alert('Please Login First');
+  }
+};
+
+document.querySelector('#logout').addEventListener('click', logout);
+
   
