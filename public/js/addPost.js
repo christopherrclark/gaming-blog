@@ -1,11 +1,7 @@
-
-
-
-
 const addPostHandler = async (event) => {
   event.preventDefault();
 
-  const postTitle = document.querySelector('h1[name="post-title"]').textContent;
+  const postTitle = document.querySelector('input[name="post-title"]').value;
   const postContent = document.querySelector('textarea[name="post-content"]').value;
      console.log(postContent);
      console.log(postTitle);
