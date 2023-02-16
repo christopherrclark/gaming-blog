@@ -172,3 +172,11 @@ li::before {
 /* #emailhelp {
   color: black;
 } */
+
+
+.like-post-button {
+  color: #c3c8ff;
+  background: none;
+  border: none;
+  
+}
