@@ -1,0 +1,44 @@
+<h1>Game Information</h1>
+
+<select id="game-dropdown">
+  <option>-- Select a Game --</option>
+</select>
+
+<div id="game-info" style="display: none" id="allBoxes" class="container text-center">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12" id="col1">
+      <h2 class="name">Name</h2>
+      <img id="image" width="300px" height="auto" src="">
+      <p id="playtime">Playtime</p>
+      <p id="rating">Rating</p>
+      <p id="platforms">Platforms: </p>
+      <p id="released">Release Date</p>
+    </div>
+  </div>
+
+  <h1>Add New Post</h1>
+<form id="add-post-form">
+    <h1 class="name" name="post-title">Name</h1>
+
+
+  
+  <div class="form-group">
+    <label for="post-content">Post Content</label>
+    <textarea class="form-control" id="post-content" name="post-content"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="/js/api.js"></script>
+<script src="/js/addPost.js"></script>
+
+</body>
