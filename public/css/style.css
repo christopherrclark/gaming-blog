@@ -15,6 +15,12 @@ body {
   color: var(--darkpurp);
 }
 
+/* h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .dashboard-title {
   display: flex;
   justify-content: center;
@@ -42,8 +48,8 @@ body {
 
 nav {
   background-color: var(--darkpurp);
+  /* color: var(--lightblue); */
 }
-
 ul {
   list-style: none;
   display: block;
@@ -56,10 +62,17 @@ li {
   margin: 0.5em;
 }
 
+/* unvisited link */
+/* a:link {
+  color: red;
+} */
+
+/* visited link */
 a:visited {
   color: white;
 }
 
+/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -69,12 +82,24 @@ a:active {
   color: white;
 }
 
+/* li::before {
+  content: "•"; color: #0d6efd;
+}
+
+li::before {
+  content: "•"; color: #0d6efd;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+} */
+
 .login-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .signup-form {
@@ -83,6 +108,8 @@ a:active {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .post-item {
@@ -227,3 +254,6 @@ padding: 20px;
 }
 
 
+/* #emailhelp {
+  color: black;
+} */
