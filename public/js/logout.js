@@ -10,7 +10,7 @@ const logout = async () => {
       window.location.reload();
 
     } else {
-      alert('Failed to log out.');
+      alert('Please sign in again');
     }
   };
   

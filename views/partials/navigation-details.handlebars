@@ -2,17 +2,20 @@
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/dashboard">Dashboard</a></li>
-    <li><a href="/login">login</a></li>
-
-    <li>Log out</li>
-    <li>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="#" id="logout-btn">Log out</a></li>
   </ul>
 </nav>
+
+<script src="/js/logout.js"></script>
+<script>
+  const logoutButton = document.getElementById('logout-btn');
+  logoutButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    // Calling the logout function.
+    logout();
+  });
+</script>
 
 
 
