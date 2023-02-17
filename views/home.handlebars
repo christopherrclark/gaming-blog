@@ -1,7 +1,10 @@
-<h1 class="home-page-title">Gaming Blog</h1>
+<h1 class="home-page-title">Gamer's Haven</h1>
 
 
   {{#each posts as |post| }}
     {{> individualPosts post}}
   {{/each}}
   {{!-- <script src="/js/api.js"></script> --}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
