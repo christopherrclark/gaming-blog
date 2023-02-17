@@ -1,3 +1,4 @@
+/* create color varibles that can easily be changed across all pages */
 :root{
   --darkpurp: #25274d;
   --lightpurp: #464866;
@@ -8,6 +9,7 @@
   --darkblue: #29648a;
 }
 
+/* adds color to all pages */
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ body {
   color: var(--darkpurp);
 }
 
+/* styling all h1 tags */
 /* h1 {
   display: flex;
   justify-content: center;
@@ -27,12 +30,13 @@ body {
   align-items: center;
 } */
 
+/* styles dashboard title */
 .dashboard-title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/* styles home page title */
 .home-page-title {
   display: flex;
   justify-content: center;
@@ -40,6 +44,7 @@ body {
   margin-bottom: 3rem;
 }
 
+/* styles the logout button */
 #logout-btn {
   color: white;
   text-decoration: underline;
@@ -48,15 +53,19 @@ body {
   margin-right: 3rem;
 }
 
+/* styles the logout button when hovered over */
 #logout-btn:hover {
   color: hotpink;
 }
 
+/* styles the navigation bar */
 nav {
   background-color: var(--darkpurp);
   /* color: var(--lightblue); */
   /* color: var(--lightblue); */
 }
+
+/* styling for the ul and li tags */
 ul {
   list-style: none;
   display: block;
@@ -86,7 +95,6 @@ a:visited {
 }
 
 /* mouse over link */
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -96,6 +104,7 @@ a:active {
   color: white;
 }
 
+/* to style the bullet points on nav bar */
 /* li::before {
   content: "•"; color: #0d6efd;
 }
@@ -116,6 +125,7 @@ li::before {
   margin-left: -1em
 } */
 
+/* styling for the login form */
 .login-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
@@ -128,6 +138,7 @@ li::before {
   /* justify-content: center; */
 }
 
+/* styling for the sign up form */
 .signup-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
@@ -140,6 +151,7 @@ li::before {
   /* justify-content: center; */
 }
 
+/* styling for the posts */
 .post-item {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
@@ -150,7 +162,7 @@ li::before {
   max-width: 500px;
 }
 
-
+/* styling for the previous carousel button */
 .carousel-control-prev {
   background-color: var(--grey);
   color: black;
@@ -161,6 +173,7 @@ li::before {
   margin: 1px auto;
 }
 
+/* styling for the next carousel button */
 .carousel-control-next {
   background-color: var(--grey);
   color: black;
@@ -171,6 +184,7 @@ li::before {
   margin: 1px auto;
 }
 
+/* styling for the delete button */
 .delete-something-button {
   background-color: var(--darkblue);
   color: white;
@@ -184,10 +198,12 @@ li::before {
 
 }
 
+/* styling for hovering over the delete button */
 .delete-something-button:hover {
   color:hotpink;
 }
 
+/* styling for the create button */
 .create-something-button {
   background-color: var(--darkblue);
   color: black;
@@ -203,7 +219,7 @@ li::before {
   color: black;
 } */
 
-
+/* styling for the like button on posts */
 .like-post-button {
   color: var(--offwhite);
   background-color: var(--darkpurp);
@@ -211,6 +227,7 @@ li::before {
   border-radius: 3px;
 }
 
+/* styling for hovering over the like button on posts */
 .like-post-button:hover {
   color: hotpink;
 }
@@ -273,6 +290,7 @@ padding: 20px;
   box-shadow: 5px 4px var(--darkpurp);
 }
 
+/* styling for the add post form */
 #add-post-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
@@ -283,16 +301,19 @@ padding: 20px;
   /* justify-content: center; */
 }
 
+/* styling for all button classes */
 .btn {
   background-color: var(--darkpurp);
 }
 
+/* styling for the logout id tag */
 #logout {
   color: white;
   text-decoration: underline;
   cursor: pointer;
 }
 
+/* styling for hovering over the logout button id */
 #logout:hover {
   color: hotpink;
 }
