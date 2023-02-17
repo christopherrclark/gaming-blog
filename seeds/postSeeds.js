@@ -5,7 +5,7 @@ const postsSeeds = [
     {
         user_id: 2, 
         post_date: "01/01/2022",
-        post_title: "GTA V is the best game ever!",
+        post_title: "GTA is the best game ever!",
         post_content: "The driving is much easier than GTA 4."
     },
     //Jason's post
@@ -13,7 +13,7 @@ const postsSeeds = [
         user_id: 1, 
         post_date: "01/01/2022",
         post_title: "Doom still reigns Supreme!",
-        post_content: "What more can I say about this game in all honesty?"
+        post_content: "What more can I say about this game in all honesty?!"
     },
 ];
 
