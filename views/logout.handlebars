@@ -1,17 +1,15 @@
 {{!-- logout --}}
 
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    </nav>
-    {{/if}}
+{{#if logged_in}}
+  <nav>
+    <button class="btn" id="logout">logout</button>
+  </nav>
+{{/if}}
 
 
-  <main class="container container-fluid mt-5">
-    {{{ body }}}
+<main class="container container-fluid mt-5">
+  {{{ body }}}
 
-  {{#if logged_in}}
+{{#if logged_in}}
   <script src="/js/logout.js"></script>
-  {{/if}}
-
-  {{!-- <script src="/js/logout.js"></script> --}}
+{{/if}}

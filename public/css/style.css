@@ -15,18 +15,6 @@ body {
   color: var(--darkpurp);
 }
 
-/* h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .dashboard-title {
   display: flex;
   justify-content: center;
@@ -54,8 +42,6 @@ body {
 
 nav {
   background-color: var(--darkpurp);
-  /* color: var(--lightblue); */
-  /* color: var(--lightblue); */
 }
 ul {
   list-style: none;
@@ -69,24 +55,11 @@ li {
   margin: 0.5em;
 }
 
-/* unvisited link */
-/* a:link {
-  color: red;
-} */
-
-/* visited link */
-/* unvisited link */
-/* a:link {
-  color: red;
-} */
-
 /* visited link */
 a:visited {
   color: white;
 }
 
-/* mouse over link */
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -96,36 +69,12 @@ a:active {
   color: white;
 }
 
-/* li::before {
-  content: "•"; color: #0d6efd;
-}
-
-li::before {
-  content: "•"; color: #0d6efd;
-  display: inline-block; width: 1em;
-  margin-left: -1em
-} */
-
-/* li::before {
-  content: "•"; color: #0d6efd;
-}
-
-li::before {
-  content: "•"; color: #0d6efd;
-  display: inline-block; width: 1em;
-  margin-left: -1em
-} */
-
 .login-form {
   background-color: var(--lightblue);
   border: 5px solid var(--lightpurp);
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
-  /* display: flex; */
-  /* justify-content: center; */
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .signup-form {
@@ -134,10 +83,6 @@ li::before {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
-  /* display: flex; */
-  /* justify-content: center; */
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .post-item {
@@ -198,12 +143,6 @@ li::before {
   margin: 1px auto;
 }
 
-
-/* #emailhelp {
-  color: black;
-} */
-
-
 .like-post-button {
   color: var(--offwhite);
   background-color: var(--darkpurp);
@@ -214,8 +153,6 @@ li::before {
 .like-post-button:hover {
   color: hotpink;
 }
-
-
 
 /* Game Info Page */
 
@@ -230,8 +167,6 @@ li::before {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .name {
@@ -241,8 +176,6 @@ padding: 20px;
 #image {
   background-color: azure;
   filter: drop-shadow(10px 10px 10px #A4BBFF);
-
-
 }
 
 #playtime {
@@ -279,8 +212,6 @@ padding: 20px;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 5px 4px var(--darkpurp);
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .btn {
@@ -296,8 +227,3 @@ padding: 20px;
 #logout:hover {
   color: hotpink;
 }
-
-
-/* #emailhelp {
-  color: black;
-} */

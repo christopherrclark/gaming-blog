@@ -81,9 +81,5 @@ router.get('/createPost', (req, res) => {
     res.render('addPost');
 })
 
-router.get('/createComment', (req, res) => {
-    res.render('addComment')
-})
-
 module.exports = router;
 
